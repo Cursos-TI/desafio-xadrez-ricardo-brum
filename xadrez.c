@@ -6,36 +6,43 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
     // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
     //Mover a torre 5 casas para a direita
     int i = 1;
     while(i <= 5){
-        printf("Torre - Direita\n");//imprime a direção do movimento
+        printf("Direita\n");//imprime a direção do movimento
         i++;
     }
+    printf("\n");
 
     // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
     //Mover o bispo 5 casas na diagonal para cima e a direita
     i = 1;
     do{
-        printf("Bispo - Cima, Direita\n");//imprime a direção do movimento
+        printf("Cima, Direita\n");//imprime a direção do movimento
         i++;
     } while(i <= 5);
+    printf("\n");
 
     // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
     //Mover a rainha 8 casas para a esquerda
     for(i = 1; i <= 8; i++){
-        printf("Rainha - Esquerda\n");//imprime a direção do movimento
+        printf("Esquerda\n");//imprime a direção do movimento
     }
-
+    printf("\n");
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Mover o cavalo 2 casas para baixo e 1 casa para a esquerda
+    for(int i = 1; i < 2; i++){
+
+        int j = 1;
+        while(j <= 2){
+            printf("Baixo\n");//imprime a direção do movimento
+            j++;
+        }
+        printf("Esquerda\n");//imprime a direção do movimento
+    }
+    printf("\n");
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
