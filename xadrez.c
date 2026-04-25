@@ -25,6 +25,13 @@
         }
     }
 
+    void moverCavalo(int casas){
+        if(casas > 0){
+            printf("Cima\n");
+            moverCavalo(casas - 1);
+        }
+    }
+
 int main() {
     // Nível Novato - Movimentação das Peças
     // Implementação de Movimentação da Torre
@@ -47,14 +54,15 @@ int main() {
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Mover o cavalo 2 casas para cima e 1 casa para a direita
-    for(int i = 1; i < 2; i++){
+    casas = 2;
+    for(int i = 1; i <= 1; i++){
+        moverCavalo(casas);
 
         int j = 1;
-        while(j <= 2){
-            printf("Cima\n");//imprime a direção do movimento
+        while(j <= 1){
+            printf("Direita\n");//imprime a direção do movimento
             j++;
         }
-        printf("Direita\n");//imprime a direção do movimento
     }
     printf("\n");
 
